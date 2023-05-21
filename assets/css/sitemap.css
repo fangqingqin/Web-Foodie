@@ -1,0 +1,22 @@
+/*---------------------
+  Site Map Styles
+-----------------------*/
+ul {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+li {
+  margin: 5px;
+}
+
+a {
+  color: #666;
+}
+
+a:hover {
+  background-color: lightgrey;
+}

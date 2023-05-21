@@ -1,0 +1,44 @@
+/*---------------------
+  Source Log Styles
+-----------------------*/
+.sourcelog {
+    /*a.  the source log table is put 50px below the heading of “Source Log”*/
+    position: relative;
+    top: 50px;
+    /*b.  the source log table has an italic, blue C with a font size of 13px*/
+    font-style: italic;
+    font-size: 13px;
+	color: #111111;
+    /*c.  the table has a single line blue border that is 2px wide*/
+    border: 2px solid;
+    border-color: #f2f2f2;
+    /*d.  the table is as wide as 80% of the window size*/
+    width: 80%;
+    /*e.  the texts in the table are left-aligned*/
+    text-align: left;
+    /*i.  (optional) the table will display a horizontal scroll bar if the window screen is too narrow to display the whole table*/
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    /*overflow: visible;*/
+}
+td, th{
+    /*f.    the texts in the table are 10 px away from the border*/
+    padding: 10px;
+}
+
+th{
+    /*g.    the background colour of the table header is blue (feel free to also change the text colour of the table header)*/
+    font-size: 18px;
+    color: black;
+    background-color: #f5bd82;
+}
+
+/*h.    (optional) the table will highlight the table row when we move the mouse over it */
+tr:hover {
+    background-color: #f2f2f2;
+    color: #f4952f;
+    font-weight: bold;
+}
+
+

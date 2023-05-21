@@ -1,0 +1,135 @@
+/*---------------------
+  1. Heading Map Section (Dark Mode)
+-----------------------*/
+.aboutme-heading-section {
+	background-color: #222;
+	color: #fff;
+	padding: 150px 0;
+}
+
+.aboutme-heading-image {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 20px;
+    filter: brightness(30%); /* Adjust the percentage as desired */
+}
+
+.aboutme-heading-text {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+}
+
+/*---------------------
+  2. About Me Section (Dark Mode)
+-----------------------*/
+.about-me {
+	padding: 20px 0;
+	text-align: center;
+	background-color: #333;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-me h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.about-me-instgram {
+	margin-left: 15%;
+	flex: 1;
+	flex-basis: 10%;
+}
+
+.about-me-content {
+	margin: 0 auto;
+	max-width: 900px;
+	flex: 6;
+}
+
+.introduction {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: left;
+	color: #fff;
+}
+
+.introduction li {
+	margin-bottom: 10px;
+	position: relative;
+	padding-left: 100px;
+}
+
+.icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	width: 30px;
+	text-align: center;
+	padding-left: 60px;
+	color: #fff;
+}
+
+/*---------------------
+   3. My Passion Section (Dark Mode)
+-----------------------*/
+.my-passion {
+	padding: 50px 0;
+	text-align: center;
+	background-color: #333;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.my-passion h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.my-passion-content {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.my-passion-line {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.my-passion-picture {
+	flex: 1;
+	margin-right: 10px;
+}
+
+.my-passion-picture img {
+	width: 60%;
+	height: auto;
+	object-fit: cover;
+}
+
+.my-passion-text {
+	flex: 1;
+	color: #fff;
+}
+
+.project-subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #fff;
+}

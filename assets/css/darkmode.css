@@ -1,0 +1,496 @@
+/*------------------------------------------------------------------
+[This css file is set for common file and index.html format (Dark Mode)]
+
+1.  Template default CSS
+2.  Header Navigation Section
+3.  Nutrition Gallery Section
+4.  Footer Section
+-------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/* 1 Template default CSS
+/*----------------------------------------*/
+html,
+body {
+	height: 100%;
+	font-family: "Nunito Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background-color: #111111;
+	color: #f2f2f2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #f2f2f2;
+	font-weight: 400;
+	font-family: "Unna", serif;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 14px;
+	font-family: "Nunito Sans", sans-serif;
+	color: #f2f2f2;
+	font-weight: 400;
+	line-height: 26px;
+	margin: 0 0 15px 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+}
+
+ul {
+	background-color: #222222;
+	padding: 7px;
+}
+
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+/*---------------------
+  2. Header Navigation Section
+-----------------------*/
+.toggle-button {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+  }
+  
+.header__top {
+	background: #333333;
+}
+
+.header_menu {
+	text-align: center;
+}
+
+.header_menu ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.header_menu ul li:last-child {
+	margin-right: 0;
+}
+
+.header_menu ul li.active>a {
+	color: #f4952f;
+}
+
+.header_menu ul li.active>a:after {
+	opacity: 1;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.header_menu ul li:hover .header_menu_wrapper {
+	top: 42px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.header_menu ul li:hover>a {
+	color: #f4952f;
+}
+
+.header_menu ul li:hover>a:after {
+	opacity: 1;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.header_menu ul li:hover .dropdown_menu {
+	opacity: 1;
+	visibility: visible;
+	top: 41px;
+}
+
+.header_menu ul li.dropdown {
+	position: relative;
+}
+
+.header_menu ul li .dropdown_menu {
+	position: absolute;
+	left: 0;
+	top: 62px;
+	width: 180px;
+	background: #333333;
+	z-index: 9;
+	text-align: left;
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	opacity: 0;
+	visibility: hidden;
+	padding: 10px 0;
+}
+
+.header_menu ul li .dropdown_menu li {
+	display: block;
+	margin-right: 0;
+}
+
+.header_menu ul li .dropdown_menu li a {
+	color: #f2f2f2;
+	padding: 5px 0;
+	padding-left: 20px;
+	text-transform: capitalize;
+}
+
+.header_menu ul li .dropdown_menu li a:hover {
+	color: #f4952f;
+}
+
+.header_menu ul li .dropdown_menu li a:after {
+	display: none;
+}
+
+.header_menu ul li a {
+	font-size: 15px;
+	color: #f2f2f2;
+	font-weight: 700;
+	font-family: "Unna", serif;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+	padding: 10px 0;
+	display: block;
+}
+
+.header_menu ul li a:after {
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	width: 100%;
+	height: 2px;
+	background: #f4952f;
+	content: "";
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+}
+
+.header_menu_wrapper {
+	position: absolute;
+	left: -175px;
+	right: -176px;
+	top: 62px;
+	z-index: 9;
+	background: #222222;
+	padding: 30px;
+	padding-bottom: 25px;
+	max-width: 1170px;
+	margin: 0 auto;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-box-shadow: 0px 5px 15px rgba(20, 14, 5, 0.15);
+	box-shadow: 0px 5px 15px rgba(20, 14, 5, 0.15);
+}
+
+.header_megamenu {
+	margin-right: -30px;
+}
+
+.header_menu_item {
+	width: calc(20% - 30px);
+	float: left;
+	margin-right: 30px;
+}
+
+.header_menu_item .header_menu_item_pic {
+	height: 132px;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.header_menu_item .header_menu_item_pic {
+	font-size: 12px;
+	color: #f2f2f2;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: #333333;
+	padding: 2px 5px 1px;
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.header_menu_item .header_menu_item_text {
+	text-align: left;
+}
+
+.header_menu_item .header_menu_item_text h5 a {
+	line-height: 20px;
+	color: #f2f2f2;
+}
+
+.header__search {
+	font-size: 14px;
+	color: #f2f2f2;
+	text-align: right;
+	padding: 10px 0 11px;
+}
+
+.header__search i {
+	cursor: pointer;
+}
+
+.header__btn {
+	padding: 57px 0 56px;
+}
+
+.header__logo {
+	padding: 50px 0 40px;
+	text-align: center;
+}
+
+.header__logo a {
+	display: inline-block;
+}
+
+.header__social {
+	text-align: right;
+	padding: 63px 0;
+}
+
+.header__social a {
+	font-size: 14px;
+	color: #f2f2f2;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.header__social a:last-child {
+	margin-right: 0;
+}
+
+/*---------------------
+  3. Nutrition Gallery Section
+-----------------------*/
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	position: relative;
+	margin-bottom: 50px; /* Add some spacing between galleries */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Add the title and the specific description */
+.title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	top: 10px;
+	left: 10px;
+	color: #f2f2f2;
+}
+
+.description {
+	font-size: 14px;
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	color: #f2f2f2;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+	transition: all 0.6s ease; /* Add CSS transition for smooth sliding */
+}
+
+.mySlides img {
+	margin-left: 5%;
+	margin-top: 5%;
+	width: auto;
+	height: 500px;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+	cursor: pointer;
+}
+
+/* Next/previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: auto;
+	padding: 16px;
+	color: grey;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	margin-left: 100px;
+	margin-right: 100px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.prev {
+	left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+	text-align: center;
+	padding: 2px 16px;
+}
+
+.thumbnail-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Six columns side by side */
+.thumbnail-column {
+	float: left;
+	width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+/*---------------------
+/* 4 Footer Section
+-----------------------*/
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.social-buttons .linkedin-section,
+.social-buttons .fb-share-button {
+    margin-right: 10px;
+}
+
+.fb-share-button a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    line-height: 1;
+}
+
+.footer p:first-child {
+    margin-bottom: 10px;
+}

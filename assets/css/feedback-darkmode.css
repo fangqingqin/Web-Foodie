@@ -1,0 +1,40 @@
+/*---------------------
+  Feedback Form Section (Dark Mode)
+-----------------------*/
+form {
+    background-color: #222; /* Change to a dark background color */
+    border-color: #444; /* Change to a darker border color */
+}
+p {
+    color: #fff; /* Change label text color to white */
+}
+.info {
+    background-color: #333; /* Change input box background color */
+    color: #fff; /* Change input text color to white */
+}
+input[type=text]::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Change placeholder text color */
+}
+input[type=text]:placeholder-shown,
+textarea:placeholder-shown {
+    color: #888; /* Change placeholder hint text color */
+}
+input[type="text"],
+textarea {
+    background-color: #333; /* Change input box background color */
+    color: #fff; /* Change input text color to white */
+}
+.submit {
+    background-color: #f5bd82; /* Change submit button background color */
+    color: #222; /* Change submit button text color */
+}
+.clear {
+    background-color: #888; /* Change clear button background color */
+    color: #fff; /* Change clear button text color to white */
+}
+.submit:hover,
+.clear:hover {
+    background-color: #f5bd82; /* Change hover background color for buttons */
+    color: #222; /* Change hover text color for buttons */
+}

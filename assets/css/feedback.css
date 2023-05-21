@@ -1,0 +1,70 @@
+/*---------------------
+  Feedback Form Section
+-----------------------*/
+form {
+	/*a.	the feedback form has a background colour*/
+    background-color: #f2f2f2;
+    /*b.	the feedback form has a solid #f5bd82 border with rounded corners*/
+    border: 2px solid;
+    border-color: #f2f2f2;
+    border-radius: 5px;
+    width: 60%;
+    padding: 15px;
+}
+/*c.	all the labels are in bold (feel free to also adjust the font size)*/
+p{
+	font-weight: bold;
+	font-size: 18px;
+}
+.sex, .submit, .clear{
+	font-weight: bold;
+	font-size: 14px;
+
+}
+.info{
+	/*e.	all the input boxes and areas are equally wide*/
+	width: 97%;
+}
+/*d.	all the text boxes and/or areas in the feedback form contain a short hint that describes the expected value*/
+/*placeholder also defined in html file*/
+input[type=text]::placeholder,
+textarea::placeholder {
+  color: #999; /* modify the color of text */
+  font-style: italic; /* modify the style of text */
+}
+input[type=text]:placeholder-shown,
+textarea:placeholder-shown {
+  color: #666; /* modify the color of hint text */
+  font-style: normal; /* modify the style of hint text  */
+}
+/*g.	there are some spaces inside each text field*/
+input[type="text"] {
+  white-space: nowrap;
+  padding: 10px;
+}
+textarea {
+  padding: 10px;
+}
+/*h.	the submit button has a #f5bd82 background colour (feel free to also change the text colour of the submit button)*/
+.submit{
+	background-color: #f5bd82;
+	color:white;
+	border:0;
+	width:10%;
+}
+/*i.	the clear button has a different background colour (feel free to also change the text colour of the clear button)*/
+.clear{
+	background-color: darkgrey;
+	color:white;
+	border:0;
+	width:10%;
+}
+
+.submit:hover, .clear:hover{
+	/*j.	(optional) the background colour of the buttons will be changed when a mouse moves over them*/
+	background-color: #f5bd82;
+	color:black;
+	/*k.	(optional) if you move your mouse to the buttons, the cursor will be changed into a hand*/
+	cursor:pointer;
+}
+

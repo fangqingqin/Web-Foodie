@@ -1,0 +1,134 @@
+/*---------------------
+  1. Heading Map Section
+-----------------------*/
+.aboutme-heading-section {
+	background-image: url("../images/me/aboutme-heading-image.jpeg");
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	padding: 150px 0;
+}
+  
+.aboutme-heading-image {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px 20px;
+}
+
+.aboutme-heading-text {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	color: #111111;
+	margin: 0;
+}
+
+/*---------------------
+  2. About Me Section
+-----------------------*/
+.about-me {
+	padding: 20px 0;
+	text-align: center;
+	background-color: #f5f5f5;
+	margin-top : 40px;
+	margin-bottom : 40px;
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+}
+
+.about-me h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.about-me-instgram {
+	margin-left: 15%;
+	flex: 1;
+	flex-basis: 10%;
+}
+
+.about-me-content {
+	margin: 0px auto;
+	max-width: 900px;
+	flex: 6; /* Optional: Allows the element to grow and shrink as needed */
+}
+
+.introduction {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.introduction li {
+	margin-bottom: 10px;
+	position: relative;
+	padding-left: 100px;
+}
+	
+  
+.icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 18px;
+	line-height: 1.5;
+	width: 30px;
+	text-align: center;
+	padding-left: 60px;
+}  
+
+/*---------------------
+   3. My Passion Section
+-----------------------*/
+.my-passion {
+	padding: 50px 0;
+	text-align: center;
+	background-color: #f5f5f5;
+	margin-top : 40px;
+	margin-bottom : 40px;
+}
+
+.my-passion h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.my-passion-content {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.my-passion-line {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.my-passion-picture {
+	flex: 1;
+	margin-right: 10px;
+	/* width: 200px;
+	height: 100px; */
+}
+
+.my-passion-picture img {
+	width: 60%;
+	height: auto;
+	object-fit: cover;
+}
+
+.my-passion-text {
+	flex: 1;
+}
+
+.project-subtitle {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
