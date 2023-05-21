@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<!-- comment  -->
+
+<html lang = "en"> 
+  
+  <head>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css" id="default-stylesheet">
+    <link rel="stylesheet" href="assets/css/darkmode.css" id="dark-mode-stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Foodie home </title>
+  </head>
+  
+  <body>
+    <!-- Requirement for Facebook Icon-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="d7gRIZXl"></script>
+            
+    <!-- Different Mode Toggle Button-->
+    <button id="dark-mode-toggle" class="toggle-button">Toggle Dark Mode</button>
+      
+    <!-- Header Navigation Section Begin -->
+    <header class="header">
+        <div class="row">
+            <nav class="header_menu">
+                <ul>
+                    <li><a href="me.html">About Me</a></li>
+                    <li><a href="me.html#mypassion">My Passion</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nutrition.html">Nutrition Source</a></li>
+                    <li><a href="#">Recipes</a>
+                        <div class="header_menu_wrapper">
+                            <div class="header_megamenu">
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-1.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make a Baked Salmon with Roasted Vegetables...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-2.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make a Fruit Cake Pie with Fresh Fruit ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-3.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make a Whole Grain Quinoa Light Salad ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-4.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make Low-fat, Low-oil Fried Fish and Chipss ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-5.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#">Assignment</a>
+                        <ul class="dropdown_menu">
+                            <li><a href="assignment.html">Assignment Home</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                            <li><a href="sourcelog.html">Source Log</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Navigation Section End --> 
+
+    <!-- Introduction Section Begin -->
+    <h1>Foodie Home</h1>
+    <!-- Introduction Section End -->
+    
+    <!-- Category Gallery Section Begin -->
+    <div class="gallery-container"></div>
+    <!-- Fruit and Vegetable Gallery Begin-->
+    <div class="container" id="fruit-vegetable-Gallery">
+        <h2 class="title"><a id="fruit-vegetable-gallery"></a>Fruit and Vegetable Gallery</h2>
+        <p class="description">The Fruit and Vegetable category encompasses the vibrant spectrum of nature's bounty, emphasizing the importance of incorporating a diverse range of fruits and vegetables into our daily meals. Packed with essential vitamins, minerals, and fiber, these colorful delights play a pivotal role in maintaining optimal health.</p>
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="assets/images/gallery/fruit-all.png" alt = "fruit-all">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="assets/images/gallery/fruit-apple.png" alt = "fruit-apple" >
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="assets/images/gallery/fruit-grape.png" alt="fruit-grape">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="assets/images/gallery/fruit-kiwifuit.png" alt="fruit-kiwifuit">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="assets/images/gallery/fruit-berries.png" alt="fruit-berries">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="assets/images/gallery/fruit-orange.png" alt="fruit-orange">
+        </div>            
+    
+        <a class="prev" onclick="plusSlides(-1, 'fruit-vegetable-Gallery')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'fruit-vegetable-Gallery')">&#10095;</a>
+    
+        <div class="caption-container">
+            <p id= "fruit-vegetable-caption"></p>
+        </div>
+    
+        <div class="thumbnail-row">
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/fruit-all.png" style="width:100%" onclick="currentSlide(1, 'fruit-vegetable-Gallery')" alt="Assorted Fruits">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/fruit-apple.png" style="width:100%" onclick="currentSlide(2, 'fruit-vegetable-Gallery')" alt="Apple">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/fruit-grape.png" style="width:100%" onclick="currentSlide(3, 'fruit-vegetable-Gallery')" alt="Grape">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/fruit-kiwifuit.png" style="width:100%" onclick="currentSlide(4, 'fruit-vegetable-Gallery')" alt="Kiwifuit">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/fruit-berries.png" style="width:100%" onclick="currentSlide(5, 'fruit-vegetable-Gallery')" alt="Berries">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/fruit-orange.png" style="width:100%" onclick="currentSlide(6, 'fruit-vegetable-Gallery')" alt="Orange">
+            </div>
+        </div>
+    </div>
+    <!-- Fruit and Vegetable Gallery End-->
+
+    <!-- Grain Gallery Begin-->
+    <div class="container" id="grainsGallery">
+        <h2 class="title"><a id="grainsgallery"></a>Grains Gallery</h2>
+        <p class="description">The Grains category encompasses a wide range of whole grains such as wheat, oats, rice, and quinoa. These complex carbohydrates offer essential fiber, vitamins, and minerals that contribute to sustained energy levels, digestive health, and overall vitality.</p>
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="assets/images/gallery/grain-all.png" alt="grain-all">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="assets/images/gallery/grain-brown-rice.png" alt="grain-brown-rice">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="assets/images/gallery/grain-buckwheat-noodle.png" alt="grain-buckwheat-noodle">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="assets/images/gallery/grain-oatmeal.png" alt="grain-oatmeal">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="assets/images/gallery/grain-quinoa.png" alt="grain-quinoa">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="assets/images/gallery/grain-wheat-bread.png" alt="grain-wheat-bread">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1, 'grainsGallery')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'grainsGallery')">&#10095;</a>
+    
+        <div class="caption-container">
+            <p id="grain-caption"></p>
+        </div>
+    
+        <div class="thumbnail-row">
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/grain-all.png" style="width:100%" onclick="currentSlide(1, 'grainsGallery')" alt="Grains food">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/grain-brown-rice.png" style="width:100%" onclick="currentSlide(2, 'grainsGallery')" alt="Brown rice">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/grain-buckwheat-noodle.png" style="width:100%" onclick="currentSlide(3, 'grainsGallery')" alt="Buckwheat Noodle">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/grain-oatmeal.png" style="width:100%" onclick="currentSlide(4, 'grainsGallery')" alt="Oatmeal">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/grain-quinoa.png" style="width:100%" onclick="currentSlide(5, 'grainsGallery')" alt="Quinoae">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/grain-wheat-bread.png" style="width:100%" onclick="currentSlide(6, 'grainsGallery')" alt="Wheat bread">
+            </div>
+        </div>
+    </div>
+    <!-- Grain Gallery End-->
+
+
+    <!-- Low-Fat Dairy Gallery Begin-->
+    <div class="container" id="low-fat-dairyGallery">
+        <h2 class="title"><a id="low-fat-dairygallery"></a>Low-Fat Dairy Gallery</h2>
+        <p class="description">The Low-Fat Dairy segment reminds us of the significance of calcium-rich options such as milk, yogurt, and cheese. These dairy products not only promote bone health but also provide protein, vitamins, and minerals that are essential for a balanced diet.</p>
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="assets/images/gallery/low-fat-dairy-all.png" alt="low-fat-dairy-all">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="assets/images/gallery/low-fat-dairy-cheese.png" alt="low-fat-dairy-cheese">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="assets/images/gallery/low-fat-dairy-greek-yogurt.png" alt="low-fat-dairy-greek-yogurt">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="assets/images/gallery/low-fat-dairy-low-fat-cheese.png" alt="low-fat-dairy-low-fat-cheese">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="assets/images/gallery/low-fat-dairy-milk.png" alt="low-fat-dairy-milk">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="assets/images/gallery/low-fat-dairy-non-fat-plain-yogurt.png" alt="low-fat-dairy-non-fat-plain-yogurt">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1, 'low-fat-dairyGallery')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'low-fat-dairyGallery')">&#10095;</a>
+    
+        <div class="caption-container">
+            <p id="low-fat-dairycaption"></p>
+        </div>
+    
+        <div class="thumbnail-row">
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/low-fat-dairy-all.png" style="width:100%" onclick="currentSlide(1, 'low-fat-dairyGallery')" alt="Low-fat Dairy Food">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/low-fat-dairy-cheese.png" style="width:100%" onclick="currentSlide(2, 'low-fat-dairyGallery')" alt="Low-fat Dairy Cheese">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/low-fat-dairy-greek-yogurt.png" style="width:100%" onclick="currentSlide(3, 'low-fat-dairyGallery')" alt="Low-fat Dairy Greek Yogurt">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/low-fat-dairy-low-fat-cheese.png" style="width:100%" onclick="currentSlide(4, 'low-fat-dairyGallery')" alt="Low-fat Dairy Low-fat Cheese">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/low-fat-dairy-milk.png" style="width:100%" onclick="currentSlide(5, 'low-fat-dairyGallery')" alt="Skim Milk">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/low-fat-dairy-non-fat-plain-yogurt.png" style="width:100%" onclick="currentSlide(6, 'low-fat-dairyGallery')" alt="low-fat-dairy-non-fat-plain-yogurt">
+            </div>
+        </div>
+    </div>
+    <!-- Low-Fat Dairy Gallery End-->
+
+    <!-- Sugar Gallery Begin-->
+    <div class="container" id="sugarGallery">
+        <h2 class="title"><a id="sugar-gallery"></a>Sugar Gallery</h2>
+        <p class="description">While a little sweetness can add joy to our taste buds, it is crucial to be mindful of our sugar intake. This section serves as a gentle reminder to be cautious and seek healthier alternatives to refined sugars, reducing the risk of various health concerns.</p>
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="assets/images/gallery/sugar-cake.png" alt = "sugar-cake">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="assets/images/gallery/sugar-candy.png" alt = "sugar-candy" >
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="assets/images/gallery/sugar-chocolate.png" alt="sugar-chocolate">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="assets/images/gallery/sugar-coockie.png" alt="sugar-coockie">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="assets/images/gallery/sugar-doughnuts.png" alt="sugar-doughnuts">
+        </div>            <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="assets/images/gallery/sugar-icecream.png" alt="sugar-icecream">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1, 'sugarGallery')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'sugarGallery')">&#10095;</a>
+    
+        <div class="caption-container">
+            <p id= "sugar-caption"></p>
+        </div>
+    
+        <div class="thumbnail-row">
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/sugar-cake.png" style="width:100%" onclick="currentSlide(1, 'sugarGallery')" alt="Cake">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/sugar-candy.png" style="width:100%" onclick="currentSlide(2, 'sugarGallery')" alt="Candy">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/sugar-chocolate.png" style="width:100%" onclick="currentSlide(3, 'sugarGallery')" alt="Chocolate">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/sugar-coockie.png" style="width:100%" onclick="currentSlide(4, 'sugarGallery')" alt="Cookie">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/sugar-doughnuts.png" style="width:100%" onclick="currentSlide(5, 'sugarGallery')" alt="Doughnuts">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/sugar-icecream.png" style="width:100%" onclick="currentSlide(6, 'sugarGallery')" alt="Ice-cream">
+            </div>
+        </div>
+    </div>
+    <!-- Sugar Gallery End-->
+    <!-- Protein Gallery Begin-->
+    <div class="container" id="proteinGallery">
+        <h2 class="title"><a id="protein-gallery"></a>Protein Gallery</h2>
+        <p class="description">The Protein section highlights the significance of this macronutrient in our diet. Protein sources, such as lean meats, fish, eggs, legumes, and nuts, provide the building blocks for growth, repair, and maintenance of our body tissues. Ensuring an adequate intake of protein fosters muscle development, supports a healthy immune system, and aids in overall well-being.</p>
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="assets/images/gallery/protein-egg.png" alt="protein-egg">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="assets/images/gallery/protein-meat.png" alt="protein-meat">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="assets/images/gallery/protein-fish.png" alt="protein-fish">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="assets/images/gallery/protein-nuts.png" alt="protein-nuts">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="assets/images/gallery/protein-prawns.png" alt="protein-prawns">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="assets/images/gallery/protein-tofu.png" alt="protein-tofu">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'proteinGallery')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'proteinGallery')">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="protein-caption"></p>
+        </div>
+
+        <div class="thumbnail-row">
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/protein-egg.png" style="width:100%" onclick="currentSlide(1, 'proteinGallery')" alt="Egg">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/protein-meat.png" style="width:100%" onclick="currentSlide(2, 'proteinGallery')" alt="Meat">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/protein-fish.png" style="width:100%" onclick="currentSlide(3, 'proteinGallery')" alt="Fish">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/protein-nuts.png" style="width:100%" onclick="currentSlide(4, 'proteinGallery')" alt="Nuts">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/protein-prawns.png" style="width:100%" onclick="currentSlide(5, 'proteinGallery')" alt="Prawns">
+            </div>
+            <div class="thumbnail-column">
+                <img class="demo cursor" src="assets/images/gallery/protein-tofu.png" style="width:100%" onclick="currentSlide(6, 'proteinGallery')" alt="Tofu">
+            </div>
+        </div>
+    </div>
+    <!-- Protein Gallery End-->
+    <!-- Category Gallery Section End --> 
+
+    <!-- Footer Setion Begin-->
+    <footer class="footer">
+        <!-- Social Button Section Begin --> 
+        <div class="social-buttons">
+            <div class="linkedin-section" id="linkedinButton">
+                <script src="https://platform.linkedin.com/in.js"></script>
+                <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+            </div>          
+            <div class="fb-share-button" data-href="https://stuweb.cecs.anu.edu.au/~u7572934/index.html" data-layout="" data-size="">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstuweb.cecs.anu.edu.au%2F%7Eu7572934%2Findex.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+            </div>
+        </div>
+        <!-- Social Button Section End --> 
+        <hr class="divider">
+        <p class="copyright">
+            &copy; 2023 Foodie - Lecture Assignment - Name: Qingqin Fang, ID: u7572934.All rights reserved.
+        </p>
+    </footer>
+    <!-- Footer Setion End-->
+
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/darkmode.js" defer></script>
+  </body>
+
+</html>

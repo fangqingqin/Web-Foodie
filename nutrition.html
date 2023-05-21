@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<!-- comment  -->
+
+<html lang = "en"> 
+    <head>
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="assets/css/style.css" id="default-stylesheet">
+        <link rel="stylesheet" href="assets/css/darkmode.css" id="dark-mode-stylesheet">
+        <!-- Bundle -->
+        <link rel="stylesheet" href="assets/css/nutrition.css">
+        <link rel="stylesheet" href="assets/css/nutrition-darkmode.css"  id="dark-mode-nutrition">
+        <title> Nutrition Source</title>    
+    </head>
+  
+    <body>
+        <!-- Requirement for Facebook Icon-->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" nonce="d7gRIZXl"></script>
+
+        <!-- Different Mode Toggle Button-->
+        <button id="dark-mode-toggle" class="toggle-button">Toggle Dark Mode</button>
+
+        <!-- Header Navigation Section Begin -->
+        <header class="header">
+            <div class="row">
+                <nav class="header_menu">
+                    <ul>
+                        <li><a href="me.html">About Me</a></li>
+                        <li><a href="me.html#mypassion">My Passion</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="nutrition.html">Nutrition Source</a></li>
+                        <li><a href="#">Recipes</a>
+                            <div class="header_menu_wrapper">
+                                <div class="header_megamenu">
+                                    <div class="header_menu_item">
+                                        <img src="assets/images/menu/p-1.png" alt="Image Description">
+                                        <div class="header_menu_item_text">
+                                            <h5><a href="#">How to Make a Baked Salmon with Roasted Vegetables...</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="header_menu_item">
+                                        <img src="assets/images/menu/p-2.png" alt="Image Description">
+                                        <div class="header_menu_item_text">
+                                            <h5><a href="#">How to Make a Fruit Cake Pie with Fresh Fruit ...</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="header_menu_item">
+                                        <img src="assets/images/menu/p-3.png" alt="Image Description">
+                                        <div class="header_menu_item_text">
+                                            <h5><a href="#">How to Make a Whole Grain Quinoa Light Salad ...</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="header_menu_item">
+                                        <img src="assets/images/menu/p-4.png" alt="Image Description">
+                                        <div class="header_menu_item_text">
+                                            <h5><a href="#">How to Make Low-fat, Low-oil Fried Fish and Chipss ...</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="header_menu_item">
+                                        <img src="assets/images/menu/p-5.png" alt="Image Description">
+                                        <div class="header_menu_item_text">
+                                            <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown"><a href="#">Assignment</a>
+                            <ul class="dropdown_menu">
+                                <li><a href="assignment.html">Assignment Home</a></li>
+                                <li><a href="sitemap.html">Sitemap</a></li>
+                                <li><a href="sourcelog.html">Source Log</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Navigation Section End --> 
+
+        <!-- Nutrition Introduction Section Begin -->  
+        <section>
+            <h2> Visualizing Nutritional Categories for a Healthier Lifestyle.</h2>
+            
+        </section>
+        <!-- Nutrition Introduction Section End -->  
+        
+        <!-- Food Pie Chart Section Begin -->
+        <section class="food-pie-chart-section">
+            <div class="food-pie-chart-text">
+                <h3>Food Categories</h3>
+                <br>
+                <p>In our fast-paced world, maintaining a healthy and balanced diet is essential. To simplify this process, we present a visually captivating pie chart that highlights five crucial categories for a well-rounded diet: Fruit and Vegetable, Low-Fat Dairy, Sugar, Protein, and Grains. This dynamic representation educates and inspires individuals to make conscious choices for their well-being.</p>
+                <br>
+            </div>
+            <div class = "food-pie-chart-container">
+                <!-- Image map used here -->
+                <img id="food-pie-chart" title="food-pie-chart" class="food-pie-chart" usemap="#foodmap">
+                <!-- <img src="assets/images/mainpage/food-pie-chart.png" title="food-pie-chart" class="food-pie-chart" usemap="#foodmap" id="chartImage"> -->
+
+                <!-- <img src="assets/images/mainpage/food-pie-chart.png" title="food-pie-chart" class="food-pie-chart" usemap="#foodmap"> -->
+                
+                <map name="foodmap">
+                    <area shape="poly" coords="29,336,239,249,244,9,84,67,10,203" alt="grains" href="index.html#grainsGallery">
+                    <area shape="poly" coords="257,15,250,247,444,354,496,225,426,81" alt="fruit-vegetables" href="index.html#fruit-vegetable-Gallery">
+                    <area shape="poly" coords="237,262,21,355,163,477" alt="protein" href="index.html#proteinGallery">
+                    <area shape="poly" coords="246,265,175,474,271,485" alt="sugar-chocolate" href="index.html#sugarGallery">
+                    <area shape="poly" coords="255,259,285,488,454,375" alt="cheese-milk-yogurt" href="index.html#low-fat-dairyGallery">
+                </map>
+            </div>
+        </section>
+        <!-- Food Pie Chart Section End -->
+
+        <!-- Footer Setion Begin-->
+        <footer class="footer">
+            <!-- Social Button Section Begin --> 
+            <div class="social-buttons">
+                <div class="linkedin-section" id="linkedinButton">
+                    <script src="https://platform.linkedin.com/in.js"></script>
+                    <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+                </div>          
+                <div class="fb-share-button" data-href="https://stuweb.cecs.anu.edu.au/~u7572934/index.html" data-layout="" data-size="">
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstuweb.cecs.anu.edu.au%2F%7Eu7572934%2Findex.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a>
+                </div>
+            </div>
+            <!-- Social Button Section End --> 
+            <hr class="divider">
+            <p class="copyright">
+                &copy; 2023 Foodie - Lecture Assignment - Name: Qingqin Fang, ID: u7572934.All rights reserved.
+            </p>
+        </footer>
+        <!-- Footer Setion End-->
+
+        <script src="assets/js/darkmode.js" defer></script>
+    </body>
+</html>

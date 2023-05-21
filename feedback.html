@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<!-- comment  -->
+
+<html lang = "en"> 
+  
+  <head>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css" id="default-stylesheet">
+    <link rel="stylesheet" href="assets/css/darkmode.css" id="dark-mode-stylesheet">
+    <!-- Bundle -->
+    <link rel="stylesheet" href="assets/css/feedback.css">
+    <link rel="stylesheet" href="assets/css/feedback-darkmode.css" id="dark-mode-feedback">
+    <title> feedback page</title>
+  </head>
+
+  <body>
+    <!-- Different Mode Toggle Button-->
+    <button id="dark-mode-toggle" class="toggle-button">Toggle Dark Mode</button>
+
+    <!-- Header Navigation Section Begin -->
+    <header class="header">
+        <div class="row">
+            <nav class="header_menu">
+                <ul>
+                    <li><a href="me.html">About Me</a></li>
+                    <li><a href="me.html#mypassion">My Passion</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nutrition.html">Nutrition Source</a></li>
+                    <li><a href="#">Recipes</a>
+                        <div class="header_menu_wrapper">
+                            <div class="header_megamenu">
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-1.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make a Baked Salmon with Roasted Vegetables...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-2.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make a Fruit Cake Pie with Fresh Fruit ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-3.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make a Whole Grain Quinoa Light Salad ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-4.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make Low-fat, Low-oil Fried Fish and Chipss ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="header_menu_item">
+                                    <img src="assets/images/menu/p-5.png" alt="Image Description">
+                                    <div class="header_menu_item_text">
+                                        <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="#">Assignment</a>
+                        <ul class="dropdown_menu">
+                            <li><a href="assignment.html">Assignment Home</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                            <li><a href="sourcelog.html">Source Log</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Navigation Section End -->  
+
+    <!-- Feedback Form Section Begin -->
+    <h1><a id="form">Feedback Form</a></h1>
+
+    <form action="MAILTO:u7572934@anu.edu.au" method="post" id="myform">
+        <p>Your name</p>
+        <input type="text" name="name" class = "info" placeholder="Your name is ...">
+
+        <p>Your email address</p>
+        <input type="text" name="email" class = "info" placeholder="Your email is ...">
+
+        <p>What is your gender</p>
+        <div class="sex">
+            <input type="radio" name="sex" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="sex" id="other">
+            <label for="other">Other</label>
+            <input type="radio" name="sex" id="notsay">
+        <label for="notsay">I prefer not to say</label>
+        </div>
+        <p>Please fill in your feedback below</p>
+        <textarea rows="10" cols="30" class = "info" placeholder="Please type your feedback here ..."></textarea><br>
+
+        <input type="submit" onclick="mailSubmit()" class="submit" value="Send it">  
+        <input type="button" class="clear" value="clear" onclick="formReset()">
+    </form>
+    <!-- Feedback Form Section End -->
+
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/darkmode.js" defer></script>
+  </body>
+
+
+</html>
